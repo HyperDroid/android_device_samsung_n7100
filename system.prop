@@ -5,8 +5,8 @@
 dalvik.vm.dexopt-data-only=1
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0
-ro.sf.lcd_density=264
-ro.lcd_min_brightness=10
+ro.sf.lcd_density=265
+ro.lcd_min_brightness=5
 
 # Beginning of HyperDroidJBX tweaks
 #
