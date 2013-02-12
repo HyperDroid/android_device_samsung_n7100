@@ -19,6 +19,12 @@
 
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
 
+# Processor optimizations
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=softfp
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7100/bluetooth
 
